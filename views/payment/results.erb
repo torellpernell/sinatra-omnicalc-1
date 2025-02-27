@@ -18,28 +18,30 @@
     APR
   </dt>
   <dd>
-    5.4200%
+    <%= @user_apr.to_f.to_fs(:percentage, {:precision => 4}) %>
   </dd>
 
   <dt>
     Number of years
   </dt>
   <dd>
-    2
+    <%= @user_years %>
   </dd>
 
   <dt>
     Principal
   </dt>
   <dd>
-    $2.00
+    <%= @user_pv.to_f.to_fs(:currency) %>
   </dd>
 
   <dt>
     Payment
   </dt>
   <dd>
-    $0.09
+
+  <%= @result.to_f.to_fs(:currency) %>
+
   </dd>
 </dl>
 
