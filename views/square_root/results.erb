@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Target: Omnicalc-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+  </head>
+
+  <body>
+    
+    <h1>
+  Square Root Results
+</h1>
+
+<dl>
+  <dt>
+    Number
+  </dt>
+  <dd>
+    <%= @number %>
+  </dd>
+
+  <dt>
+    Square Root
+  </dt>
+  <dd>
+    <%= Math.sqrt(@number.to_f) %>
+  </dd>
+</dl>
+
+<a href="/square_root/new">
+  Calculate another square root
+</a>
+
+  </body>
+</html>
