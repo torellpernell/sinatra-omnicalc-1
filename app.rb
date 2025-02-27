@@ -30,6 +30,8 @@ get("/random/new") do
 end
 
 get("/random/results") do
+  @user_min = params.fetch("user_min")
+  @user_max = params.fetch("user_max")
   erb(:"random/results")
 end
 

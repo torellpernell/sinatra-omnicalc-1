@@ -18,21 +18,21 @@
     Minimum
   </dt>
   <dd>
-    90.0
+    <%= @user_min.to_f %>
   </dd>
 
   <dt>
     Maximum
   </dt>
   <dd>
-    95.0
+    <%= @user_max.to_f %>
   </dd>
 
   <dt>
     Random Number
   </dt>
   <dd>
-    90.74797036253307
+  <%= rand(@user_min.to_f..@user_max.to_f) %>
   </dd>
 </dl>
 
